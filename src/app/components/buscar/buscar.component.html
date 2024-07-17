@@ -1,0 +1,43 @@
+<title>Busqueda de usuario por documento</title>
+<div class="container text-center">
+  <div class="row align-items-end">
+    <div class="col">
+      <div class="container-fluid">
+        <div class="formulario">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Documento</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="nombre">
+
+          </div>
+          <button (click)="buscarUsuario()" class="btn btn-primary">Buscar</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <table class="table">
+        <tr>
+          <th scope="col">Documento</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Password</th>
+          <th scope="col">rol</th>
+          <th scope="col">Estado</th>
+        </tr>
+        <tr *ngFor="let usuario of usuarios;let i = index" [class.active]="i == indiceActual">
+          <td>{{usuario.documento}}</td>
+          <td>{{usuario.nombre}}</td>
+          <td>{{usuario.correo}}</td>
+          <td>{{usuario.password}}</td>
+          <td>{{usuario.rol}}</td>
+          <td>{{usuario.estado}}</td>
+
+
+        </tr>
+
+
+      </table>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<h1>listado</h1>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>documento</th>
+    <th>nombre</th>
+    <th>correo</th>
+    <th>password</th>
+    <th>rol</th>
+    <th>estado</th>
+
+  </tr>
+  <tr
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    <td>{{usuario.id}}</td>
+    <td>{{usuario.documento}}</td>
+    <td>{{usuario.nombre}}</td>
+    <td>{{usuario.correo}}</td>
+    <td>{{usuario.password}}</td>
+    <td>{{usuario.rol}}</td>
+    <td>{{usuario.estado}}</td>
+  </tr>
+</table>
+<!--<ul class="list-group">
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.documento}}
+  </li>
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.nombre}}
+  </li>
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.correo}}
+  </li>
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.password}}
+  </li>
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.rol}}
+  </li>
+  <li 
+  class="list-group-item"
+  *ngFor="let usuario of usuarios;let i = index"
+  [class.active]="i == indiceActual"
+  >
+    {{usuario.estado}}
+  </li>
+  
+</ul>-->

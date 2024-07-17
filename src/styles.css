@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+  }
+  
+  header{
+    background-color:#3E7551;
+    width: 100%;
+    height: 10px;
+  
+  }
+  nav{
+    background-color:#3E7551;
+    width: 100%;
+    height: 100px;
+    
+  
+  }
+  main{
+    background-color:#3055ab;
+    width: 100%;
+    height: calc(110vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .selection{
+    background-color:#3E7551;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+  }
+  aside{
+    background-color:#F5F5F5;
+    width: 80%;
+    height: 100%;
+    
+  }
+  
+  footer{
+    background-color:#cdd0d0;
+    width: 100%;
+    height: 20px;
+  }
+  .box{
+    background-color: #B4CEBB;
+    background-size: 100px 100px;
+    height: 320px;
+    width: 850px;
+    margin: 2%;
+  }
+  .brand img{
+    width: 20%;
+    height: 250px;
+  }
+  
+  .buscador{
+    justify-content: center;
+  }
+
+  .caja{
+    float: right;
+    height: 10px;
+    width: 400px;
+    padding: 3% 0;
+
+  }
+  .lado2{
+    text-align: center;
+
+
+  }
+.icono{
+  float: right ;
+
+}
+.boton-personalizado{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#333333;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:#CCEFEF;
+    border-color: #d8d8d8;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+}
+.img{
+  color: #3E7551;
+}
+.baner{
+  background-color:#333333;
+    background-size: 100px 100px;
+    height: 40px;
+    width: 850px;
+    margin: 2%;
+}
+.menu{
+  float: left;
+  padding: 10px;
+}
+.opciones li{
+  float: left;
+  list-style: none;
+}
+.opciones li a{
+  color: aliceblue;
+  padding: 50px;
+  text-decoration: none;
+}
+.cuerpo{
+  overflow: hidden;
+  background: #F5F5F5;
+}
+.busqueda{
+  background-color:#B4CEBB;
+    background-size: 10px 10px;
+    height: 260px;
+    width: 800px;
+    margin: 2%;
+    padding: 10px;
+    color: #050505;
+    text-align: left;
+}
+
